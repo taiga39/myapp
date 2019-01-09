@@ -1,0 +1,2 @@
+class Nogizaka < ApplicationRecord
+end
