@@ -1,0 +1,49 @@
+<div class="content2">
+  <h2>BMI</h2>
+    <form>
+        <label for="textForm1">身長(cm): </label>
+        <br>
+        <input type="number" id="textForm1">
+        <br>
+        <label for="textForm2">体重(kg): </label>
+        <br>
+        <input type="number" id="textForm2">
+        <br>
+        <button id="button">計算</button>
+    </form>
+
+    <label for="resultForm">BMI: </label>
+    <br>
+    <input type="number" id="resultForm">
+    <div id="bmiresult"></div>
+</div>
+
+<script>
+var button = document.getElementById("button");
+
+button.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    var textForm1 = Number(document.getElementById("textForm1").value);
+    var textForm2 = Number(document.getElementById("textForm2").value);
+
+    var bmi = Math.round((textForm2/((textForm1/100)*(textForm1/100)))*10)/10;
+
+    var resultForm = document.getElementById("resultForm");
+    resultForm.value = bmi;
+
+    if (bmi < 18.5 ){
+        var bmiresult = document.getElementById("bmiresult");
+        bmiresult.innerHTML = "<h4>痩せ過ぎだよ！</h4>";
+    } else if(bmi > 25){
+        var bmiresult = document.getElementById("bmiresult");
+        bmiresult.innerHTML = "<h4>太り過ぎだよ！</h4>";
+    }
+    else{
+        var bmiresult = document.getElementById("bmiresult");
+        bmiresult.innerHTML = "<h4>いい感じ！</h4>";
+    }
+});
+
+</script>

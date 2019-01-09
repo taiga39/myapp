@@ -13,4 +13,10 @@
   <button @click="addItem">add</button>
 </div>
 
+<div id="vue">
+  <p :class="{'is-red': red}">Hello</p>
+  <button @click="toggleColor">Toggle color</button>
+</div>
+
+
 <%= javascript_pack_tag 'hello_vue' %>
