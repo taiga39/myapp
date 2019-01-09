@@ -5,19 +5,32 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-import Vue from 'vue'
-import App from '../app.vue'
+ import Vue from 'vue/dist/vue.esm'
 
-document.addEventListener('DOMContentLoaded', () => {
-  const el = document.body.appendChild(document.createElement('hello'))
-  const app = new Vue({
-    el,
-    render: h => h(App)
-  })
+ const app = new Vue({
+    el: '#hello',
+    data: {
+      message: "Can you say hello?"
+    }
+ })
 
-  console.log(app)
+new Vue({
+  el: '#app',
+  data: {
+    counter: 0,
+    list: ['Apple', 'Banana', 'Strawberry']
+  },
+  computed: {
+    length: function() {
+      return this.list.length
+    }
+  },
+  methods: {
+    addItem: function() {
+      this.list.push('Orange' + (++this.counter).toString())
+    }
+  }
 })
-
 
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would

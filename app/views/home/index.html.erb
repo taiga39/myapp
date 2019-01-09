@@ -1,0 +1,16 @@
+<div id="hello">
+  <h1>Page</h1>
+  <p> {{message}} </p>
+</div>
+
+<div id="app">
+  <p>Length: {{ length }}</p>
+  <ul>
+    <li v-for="(item, i) in list" :key="item">{{ item }}
+      <button @click="list.splice(i, 1)">remove</button>
+    </li>
+  </ul>
+  <button @click="addItem">add</button>
+</div>
+
+<%= javascript_pack_tag 'hello_vue' %>
