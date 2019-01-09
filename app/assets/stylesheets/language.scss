@@ -1,0 +1,43 @@
+html,body{
+  margin:0;
+  width:100%;
+
+}
+#content1{
+  width:70%;
+  margin: 0 auto;
+  text-align: center;
+  #mondai-content{
+    h2{
+      margin:0;
+    }
+    h4{
+      font-size:30px;
+      color:red;
+    }
+    input{
+      width: 180px;
+      height: 1em;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 30px;
+
+    }
+    #mondai1{
+      text-align: center;
+    }
+    #mondai2{
+      text-align: center;
+    }
+    #mondai3{
+      text-align: center;
+    }
+    #mondai4{
+      text-align: center;
+    }
+    #mondai5{
+      text-align: center;
+    }
+  }
+}

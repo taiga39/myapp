@@ -1,0 +1,59 @@
+<div id="content1">
+  <div>
+    <h1> 文字を並び替えて、正しいプログラミング言語にしよう </h1>
+  </div>
+
+    <%- @langquiz.each_with_index do |lang,index| %>
+      <div id="mondai-content">
+        <h2><%= "問題#{index+1}" %></h2>
+        <h2 id="mondai<%= index+1 %>">
+          <br>
+          <%= lang %>
+        <form action="" id="form<%= index+1%>">
+          <input id="textBox<%= index+1%>" type="text" value="" onkeyup="onButtonClick<%= index+1%>();"/>
+        </form>
+        </h2>
+    </div>
+    <% end %>
+</div>
+
+
+
+    <script language="javascript" type="text/javascript">
+        function onButtonClick1() {
+            var val = document.forms.form1.textBox1.value;
+            var target = document.getElementById("mondai1");
+            if (val ==  gon.toi1) {
+                target.innerHTML = "<h4>正解</h4>";
+            }
+        }
+        function onButtonClick2() {
+            var val = document.forms.form2.textBox2.value;
+            var target2 = document.getElementById("mondai2");
+            if (val ==  gon.toi2) {
+                target2.innerHTML = "<h4>正解</h4>";
+            }
+        }
+        function onButtonClick3() {
+            var val = document.forms.form3.textBox3.value;
+            var target3 = document.getElementById("mondai3");
+            if (val ==  gon.toi3) {
+                target3.innerHTML = "<h4>正解</h4>";
+
+            }
+        }
+        function onButtonClick4() {
+            var val = document.forms.form4.textBox4.value;
+            var target4 = document.getElementById("mondai4");
+            if (val ==  gon.toi4) {
+                target4.innerHTML = "<h4>正解</h4>";
+            }
+        }
+        function onButtonClick5() {
+            var val = document.forms.form5.textBox5.value;
+            var target5 = document.getElementById("mondai5");
+            if (val ==  gon.toi5) {
+                target5.innerHTML = "<h4>正解</h4>";
+            }
+        }
+    </script>
