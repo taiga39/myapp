@@ -1,0 +1,41 @@
+
+<div id ="content3">
+  <h1>You are God! Delete Planet</h1>
+  <%- @planet.each do |pla| %>
+    <button id="<%= pla %>"><%= image_tag ( "#{pla}.png") %></button>
+  <%- end %>
+</div>
+<div id="space">
+  <button id="roadgod">Remake Space!</button>
+</div>
+
+<script>
+  var planet = ["Mercury","Venus","Earth","Mars","Jupiter", "Saturn", "Uranus", "Neptune"]
+    document.getElementById(`${planet[0]}`).onclick = function() {
+      document.getElementById(`${planet[0]}`).remove();
+    }
+    document.getElementById(`${planet[1]}`).onclick = function() {
+      document.getElementById(`${planet[1]}`).remove();
+    }
+    document.getElementById(`${planet[2]}`).onclick = function() {
+      document.getElementById(`${planet[2]}`).remove();
+    }
+    document.getElementById(`${planet[3]}`).onclick = function() {
+      document.getElementById(`${planet[3]}`).remove();
+    }
+    document.getElementById(`${planet[4]}`).onclick = function() {
+      document.getElementById(`${planet[4]}`).remove();
+    }
+    document.getElementById(`${planet[5]}`).onclick = function() {
+      document.getElementById(`${planet[5]}`).remove();
+    }
+    document.getElementById(`${planet[6]}`).onclick = function() {
+      document.getElementById(`${planet[6]}`).remove();
+    }
+    document.getElementById(`${planet[7]}`).onclick = function() {
+      document.getElementById(`${planet[7]}`).remove();
+    }
+    document.getElementById("roadgod").onclick = function() {
+      window.location.reload();
+    }
+</script>
