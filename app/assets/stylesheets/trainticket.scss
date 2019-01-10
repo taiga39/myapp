@@ -1,3 +1,30 @@
-// Place all the styles related to the trainticket controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#content3{
+  background-color: #ececec;
+
+  h1{
+    text-align: center;
+    margin:0;
+  }
+  text-align: center;
+  button{
+    border:none;
+    padding:0;
+    margin-right: 10px;
+    img{
+      height:110px;
+    }
+  }
+}
+
+#space{
+  height:100px;
+  text-align: center;
+  background-color: #ececec;
+  line-height: 100px;
+  button{
+    font-size: 30px;
+    background-color: black;
+    color:white;
+  }
+
+}

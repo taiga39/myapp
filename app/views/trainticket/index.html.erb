@@ -1,11 +1,16 @@
+
 <div id ="content3">
+  <h1>You are God! Delete Planet</h1>
   <%- @planet.each do |pla| %>
-    <button id="<%= pla %>"><%= pla %></button>
+    <button id="<%= pla %>"><%= image_tag ( "#{pla}.png") %></button>
   <%- end %>
+</div>
+<div id="space">
+  <button id="roadgod">Remake Space!</button>
 </div>
 
 <script>
-  var planet = ["Mercury","Venus","Earth","Mars","Jupiter", "Saturn", "Uranus","Pluto", "Neptune"]
+  var planet = ["Mercury","Venus","Earth","Mars","Jupiter", "Saturn", "Uranus", "Neptune"]
     document.getElementById(`${planet[0]}`).onclick = function() {
       document.getElementById(`${planet[0]}`).remove();
     }
@@ -30,7 +35,7 @@
     document.getElementById(`${planet[7]}`).onclick = function() {
       document.getElementById(`${planet[7]}`).remove();
     }
-    document.getElementById(`${planet[8]}`).onclick = function() {
-      document.getElementById(`${planet[8]}`).remove();
+    document.getElementById("roadgod").onclick = function() {
+      window.location.reload();
     }
 </script>
