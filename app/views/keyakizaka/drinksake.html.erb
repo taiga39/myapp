@@ -1,0 +1,37 @@
+<div id="content4">
+  <h1>You can marry NewEraPeople!!</h1>
+  <h4 id="year">year month day</h4>
+  <h2 id="sakemetor"></h2>
+  <h2 id="saketime"></h2>
+</div>
+<script>
+function set2fig(num) {
+   var ret;
+   if( num < 10 ) { ret = "0" + num; }
+   else { ret = num; }
+   return ret;
+}
+
+function showClock1() {
+   var nowTime = new Date();
+   nowTime.setFullYear(gon.year - nowTime.getFullYear());
+   nowTime.setMonth(gon.month - nowTime.getMonth() -1 );
+   nowTime.setDate(gon.day - nowTime.getDate() );
+
+   nowTime.setHours(gon.hour - nowTime.getHours() );
+   nowTime.setMinutes(gon.minute - nowTime.getMinutes());
+   nowTime.setSeconds(gon.second - nowTime.getSeconds());
+   var nowyear = set2fig(nowTime.getFullYear());
+   var nowmonth = set2fig(nowTime.getMonth());
+   var nowday = set2fig(nowTime.getDate());
+   var nowHour = set2fig(nowTime.getHours());
+   var nowMin  = set2fig(nowTime.getMinutes());
+   var nowSec  = set2fig(nowTime.getSeconds());
+
+   var date = `${nowyear}` +" "+ `${nowmonth}` +" "+`${nowday}`;
+   var time = nowHour + ":" + nowMin + ":" + nowSec;
+   document.getElementById("sakemetor").innerHTML = date;
+   document.getElementById("saketime").innerHTML = time;
+}
+setInterval('showClock1()',1000);
+</script>

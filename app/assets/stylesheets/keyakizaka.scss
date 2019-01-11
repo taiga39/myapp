@@ -1,0 +1,36 @@
+ @font-face{
+   font-family: "hoge";
+   src: font-url('DS-DIGIB.TTF');
+
+ }
+
+#content4{
+  text-align: center;
+  height:100vh;
+  color:red;
+  background-color: green;
+  h1{
+    margin:0;
+    font-size: 100px;
+  }
+  #sakemetor{
+    margin: 0;
+    font-size:150px;
+    font-family: "hoge";
+    background-color: blue;
+    color:white;
+  }
+  #year{
+    margin: 0;
+    font-size:50px;
+    background-color: blue;
+    color:white;
+  }
+  #saketime{
+    margin: 0;
+    font-size:150px;
+    font-family: "hoge";
+    background-color: yellow;
+    color:black;
+  }
+}
