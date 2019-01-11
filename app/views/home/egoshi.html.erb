@@ -1,0 +1,35 @@
+<div id="content5">
+  <h1>Egoshi Dream</h1>
+  <h2>入団4年、412打数13本塁打の男が<br>ホームランキングを目指す</h2>
+  <button id="mawasu">ホームラン王に挑戦する</button>
+  <div id="result"></div>
+</div>
+
+<script>
+  document.getElementById("mawasu").onclick = function() {
+    var i = 0;
+    var mugen = 0
+    var count = 0
+    var result = document.getElementById("result");
+
+
+    while(mugen < 1){
+      count++;
+      var egoshi = 0;
+        for (i; i < 444; i++ ){
+          var random = Math.floor(Math.random() * 413);
+          var hrnum = Math.floor(Math.random() * 23 ) + 28;
+          if (random < 13){
+            egoshi++;
+          }
+        }
+        i = 0;
+        if (egoshi > hrnum) break;
+    }
+    console.log(egoshi);
+    console.log(count);
+    console.log(hrnum);
+
+    result.insertAdjacentHTML('afterbegin', "<h4>" + "江越は入団から"+ count+5 + "年後、" + egoshi + "本のホームランを放ちホームラン王となった。" + "</h4>" + "<br>" +"<h4>" + "ちなみに、二番目に多くのホームランを放った伊藤隼は"+ hrnum +"本であった。"+"</h4>");
+  }
+</script>
