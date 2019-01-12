@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: "home#index"
+  root to: 'home#index'
+  get '/about',   to: 'home#index'
+  get '/contact', to: 'home#index'
   get "day1" => "language#index"
   get "day2" => "home#bmi"
   get "day3" => "trainticket#index"
