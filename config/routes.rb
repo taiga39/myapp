@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'home#index'
+  resources :posttests
   get '/about',   to: 'home#index'
   get '/contact', to: 'home#index'
   get "day1" => "language#index"

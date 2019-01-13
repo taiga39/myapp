@@ -1,0 +1,17 @@
+<div id="kasaform">
+  <h2>なまえを入力しよう</h2>
+  <%= form_for @post do |f| %>
+    <div id="newname1">
+      <%= f.label :name, "一人目のなまえ" %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div id="newname2">
+      <%= f.label :review, "二人目のなまえ" %><br>
+      <%= f.text_field :review %>
+    </div>
+    <div id="sendnewname">
+      <button type="submit" name="commit" value="決定する" data-disable-with="決定する" id="sendnewname" >決定する
+      </button>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,15 @@
+<div id="umbrella">
+  <%= image_tag ( "umbrella.png") %>
+  <div id="moji">
+    <p id="name1">
+      <%= @latest.name %>
+    </p>
+    <p id="name2">
+      <%= @latest.review %>
+    </p>
+  </div>
+</div>
+<br>
+<div id="newname">
+  <%= link_to "新しい相合い傘を書く",new_posttest_path %>
+</div>

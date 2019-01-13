@@ -1,2 +1,0 @@
-class NogizakaController < ApplicationController
-end

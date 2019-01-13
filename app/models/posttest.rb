@@ -1,0 +1,2 @@
+class Posttest < ApplicationRecord
+end
