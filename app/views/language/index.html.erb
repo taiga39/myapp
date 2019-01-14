@@ -1,6 +1,6 @@
 <div id="content1">
   <div>
-    <h1> 文字を並び替えて、正しいプログラミング言語にしよう </h1>
+    <h1> 文字を並び替えて、<br>正しいプログラミング言語にしよう </h1>
   </div>
 
     <%- @langquiz.each_with_index do |lang,index| %>
@@ -15,6 +15,8 @@
         </h2>
     </div>
     <% end %>
+  <%= link_to "トップ画面に戻る",app_path %>
+
 </div>
     <script language="javascript" type="text/javascript">
         function onButtonClick1() {

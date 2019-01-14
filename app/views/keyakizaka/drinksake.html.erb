@@ -1,9 +1,15 @@
 <div id="content4">
-  <h1>Can you celebrate?</h1>
+  <h1>Can you Celebrate?</h1>
   <h4 id="year">year month day</h4>
   <h2 id="sakemetor"></h2>
   <h2 id="saketime"></h2>
+  <h2>
+    <%= link_to "Go to Top",app_path %>
+  <h2>
 </div>
+
+
+
 <script>
 function set2fig(num) {
    var ret;
@@ -34,4 +40,7 @@ function showClock1() {
    document.getElementById("saketime").innerHTML = time;
 }
 setInterval('showClock1()',1000);
+
+
+
 </script>

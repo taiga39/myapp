@@ -1,9 +1,7 @@
  @font-face{
    font-family: "hoge";
    src: font-url('DS-DIGIB.TTF');
-
  }
-
 #content4{
   text-align: center;
   height:100vh;
@@ -33,4 +31,12 @@
     background-color: yellow;
     color:black;
   }
+  a{
+    font-family: "hoge";
+    color:white;
+    text-decoration: none;
+    font-size: 80px;
+  }
 }
+
+
