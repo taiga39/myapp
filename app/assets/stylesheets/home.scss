@@ -1,3 +1,4 @@
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -15,10 +16,17 @@
     }
 }
 
+
 .wrapper {
-  border: 1px solid #333;
+  margin:0 auto;
+  min-height: 400px;
+  padding: 20px 20px 20px 20px;
+  width:70%;
+  margin-top:80px;
+  background-color: white;
   animation: fadeIn 1s;
   animation-fill-mode: both;
+  border-radius:30px;
 }
 .content2{
   width:100%;
