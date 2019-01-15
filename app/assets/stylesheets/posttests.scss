@@ -44,6 +44,7 @@
   }
 }
 
+
 #newname{
   font-family: "crayon";
   font-size:60px;
@@ -79,5 +80,56 @@
     background-color: white;
     border-style: none;
 
+  }
+}
+@media screen and (max-width: 640px){
+  #umbrella{
+    h1{
+      font-family: "crayon";
+      font-size:60px;
+      margin:0;
+      color:red;
+    }
+    #moji{
+      width:350px;
+      height:400px;
+      position: relative;
+      z-index:2;
+      left:20%;
+      p {
+        color: white;
+        writing-mode: vertical-rl;
+        font-family: "crayon";
+        font-size: 40px;
+      }
+       #name1 {
+          position: absolute;
+          top: 50%;
+          left: 15%;
+          z-index:3;
+        }
+       #name2 {
+          position: absolute;
+          top: 50%;
+          left: 40%;
+          z-index:3;
+        }
+    }
+    img {
+     width:350px;
+     height:400px;
+     z-index:1;
+     position: absolute;
+     left:10%;
+    }
+  }
+  #newname{
+    font-family: "crayon";
+    font-size:20px;
+    a{
+      text-decoration:none;
+      color:green;
+
+    }
   }
 }
