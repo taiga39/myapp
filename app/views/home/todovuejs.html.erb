@@ -1,5 +1,5 @@
-<div class="content7">
-  <h2>ToDoリスト</h2>
+<div id="content7">
+  <h2>SimpleToDoList</h2>
   <div id="todo">
     <div v-for="todo in todos">
       <label>
@@ -12,11 +12,21 @@
     <p>{{remaining}}/{{todos.length}}件処理</p>
   </div>
 </div>
+<%= link_to "トップ画面に戻る",app_path %>
+
 
 <style>
   .donestyle {
     text-decoration: line-through;
     color:red;
+  }
+  #content7{
+    margin: 0 auto;
+    padding:20px 20px 0 20px;
+    min-height:300px;
+    width:300px;
+    margin-top:20px;
+    background-color: white;
   }
 </style>
 
