@@ -1,0 +1,21 @@
+<div class="content7">
+  <h2>ToDoリスト</h2>
+  <div id="todo">
+    <div v-for="todo in todos">
+      <label>
+        <input type="checkbox" v-model="todo.done">
+        <span v-bind:class="{donestyle:todo.done}">{{todo.text}}</span>
+      </label>
+    </div>
+    <p>{{remaining}}/{{todos.length}}件処理</p>
+  </div>
+</div>
+
+<style>
+  .donestyle {
+    text-decoration: line-through;
+    color:red;
+  }
+</style>
+
+<%= javascript_pack_tag 'todo_sample' %>
