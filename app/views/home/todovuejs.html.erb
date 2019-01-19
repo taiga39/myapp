@@ -1,0 +1,33 @@
+<div id="content7">
+  <h2>SimpleToDoList</h2>
+  <div id="todo">
+    <div v-for="todo in todos">
+      <label>
+        <input type="checkbox" v-model="todo.done">
+        <span v-bind:class="{donestyle:todo.done}">{{todo.text}}</span>
+      </label>
+    </div>
+    <input type="text" v-model.trim="addtext" v-on:keyup.enter="addToDo" placeholder="すること">
+    <p><button v-on:click="cleanToDo">処理済を削除</button></p>
+    <p>{{remaining}}/{{todos.length}}件処理</p>
+  </div>
+</div>
+<%= link_to "トップ画面に戻る",app_path %>
+
+
+<style>
+  .donestyle {
+    text-decoration: line-through;
+    color:red;
+  }
+  #content7{
+    margin: 0 auto;
+    padding:20px 20px 0 20px;
+    min-height:300px;
+    width:300px;
+    margin-top:20px;
+    background-color: white;
+  }
+</style>
+
+<%= javascript_pack_tag 'todo_sample' %>

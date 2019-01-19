@@ -47,6 +47,13 @@
           <p>大好きなあの子と噂になって、黒板に名前を書かれちゃおう</p>
         </a>
       </div>
+      <div class="app">
+        <a href="day7">
+          <h4>SimpleToDoList</h4>
+          <img src="assets/content7.png">
+          <p>Vue.jsを使っためちゃくちゃシンプルなToDoリスト</p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
