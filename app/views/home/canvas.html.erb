@@ -1,0 +1,75 @@
+<div id="content8" onload="start()">
+  <canvas id="canvas">
+  </canvas>
+</div>
+
+<style>
+  #content8{
+    margin: 0 auto;
+    padding:20px 20px 0 20px;
+    min-height:300px;
+    width:800px;
+    margin-top:20px;
+  }
+  #canvas{
+    height:300px;
+    width:800px;
+    display: block;
+    background-color: white;
+
+  }
+@media screen and (max-width: 640px){
+  #canvas{
+    height:300px;
+    width:300px;
+    display: block;
+    background-color: white;
+  }
+}
+</style>
+
+<script>
+window.addEventListener( 'load', function(){
+  let canvas = document.querySelector('#canvas');
+  let context = canvas.getContext('2d');
+  let x = Math.random() * 99;
+  let y = Math.random() * 99;
+  let moveX = (Math.random() * 1.5 )+ 0.5;
+  let moveY = (Math.random() * 1.5) + 0.5;
+  var ary = ['SODクリエイト','プレステージ','Hunter','グローリークエスト','アリスJAPAN','ケイ・エム・プロデュース','クリスタル映像'];
+  var random = ary[Math.floor(Math.random() * ary.length)];
+  let text = random;
+  let paddingX = 100 ;
+  let paddingY = 14;
+  if (x > 70){
+    context.font = "bold 10px 'Courier'";
+  }else if(x > 30){
+    context.font = "bold 20px 'Courier'";
+  }else{
+    context.font = "bold 30px 'Courier'";
+  }
+  function draw(){
+    context.fillStyle = 'rgba(255, 255, 255, 1)';
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.fillStyle = "rgb(199,21,133)";
+    context.fillText(text, x, y);
+    x += moveX;
+    y += moveY;
+    if(x < 0)
+      moveX = Math.abs(moveX);
+    if(canvas.width - paddingX < x )
+      moveX = -Math.abs(moveX);
+    if(y < 0 + paddingY)
+      moveY = Math.abs(moveY);
+    if(canvas.height < y)
+      moveY = -Math.abs(moveY);
+    window.requestAnimationFrame(draw);
+  }
+  window.requestAnimationFrame(draw);
+  canvasText.addEventListener('change', function(){
+    text = this.value;
+    paddingX = text.length * 26 / 2;
+  });
+});
+
+</script>

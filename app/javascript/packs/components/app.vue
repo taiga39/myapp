@@ -54,6 +54,13 @@
           <p>Vue.jsを使っためちゃくちゃシンプルなToDoリスト</p>
         </a>
       </div>
+      <div class="app">
+        <a href="day8">
+          <h4>StrCanvasMove</h4>
+          <img src="assets/day8.png">
+          <p>Canvas内を文字が動き回るよ</p>
+        </a>
+      </div>
     </div>
   </div>
 </template>

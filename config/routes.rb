@@ -12,6 +12,5 @@ Rails.application.routes.draw do
   get "day4" => "keyakizaka#drinksake"
   get "day5" => "home#egoshi"
   get "day7" => "home#todovuejs"
-
-
+  get "day8" => "home#canvas"
 end
