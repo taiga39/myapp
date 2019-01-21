@@ -1,0 +1,102 @@
+#content9{
+  height:100vh;
+  width:700px;
+  margin: 0 auto;
+  i{
+    font-size:100px;
+  }
+  .font-list{
+    display:flex;
+    flex-wrap: wrap;
+    padding:20px 20px 20px 20px;
+    justify-content:space-around;
+  }
+  a{
+    color:black;
+    text-decoration:none;
+    #day9-top{
+      height:60px;
+      width:100px;
+      margin: 0 auto;
+      background-color: white;
+      line-height:60px;
+      border-radius: 4px;
+    }
+  }
+}
+#line-icon-button {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: none;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#title-button {
+  display: inline-block;
+  max-width: 300px;
+  text-align: left;
+  border: none;
+  font-size: 16px;
+  color: #9ec34b;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.btn-animation-02 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  border: 2px solid black;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn-animation-02 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-animation-02::before,
+.btn-animation-02::after {
+  content: "";
+  display: block;
+  background-color: #FFF;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.btn-animation-02::before {
+  left: 0;
+}
+.btn-animation-02::after {
+  right: 0;
+}
+
+.btn-animation-02:hover:before,
+.btn-animation-02:hover:after {
+  width: 0;
+  background-color: #FFF;
+}
+
+.btn-animation-02:hover {
+  color: #FFF;
+}

@@ -1,0 +1,46 @@
+<div id="content9">
+  <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColorline(this)'}" id="title-button"><h2>IconColorChange</h2></button>
+  <div class="font-list">
+    <div class="font-icon">
+      <i class="fab fa-line" id="line-icon"></i><br>
+      <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColorline(this)'}" id="line-icon-button">Change!!</button>
+    </div>
+    <div class="font-icon">
+        <i class="fab fa-facebook-square" id="facebook-icon"></i><br>
+        <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColorfacebook(this)'}" id="line-icon-button">Change!!</button>
+    </div>
+    <div class="font-icon">
+        <i class="fab fa-twitter" id="twitter-icon"></i><br>
+        <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColortwitter(this)'}" id="line-icon-button">Change!!</button>
+    </div>
+    <div class="font-icon">
+        <i class="fab fa-youtube" id="youtube-icon"></i><br>
+        <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColoryoutube(this)'}" id="line-icon-button">Change!!</button>
+    </div>
+  </div>
+  <a href="app">
+    <div class="btn-animation-02">
+      <span>Go to Top</span>
+    </div>
+  </a>
+
+</div>
+
+
+
+<script>
+  function setTextColorline(picker) {
+    document.getElementById('line-icon').style.color = '#' + picker.toString()
+  }
+  function setTextColorfacebook(picker) {
+    document.getElementById('facebook-icon').style.color = '#' + picker.toString()
+  }
+  function setTextColoryoutube(picker) {
+    document.getElementById('youtube-icon').style.color = '#' + picker.toString()
+  }
+  function setTextColortwitter(picker) {
+    document.getElementById('twitter-icon').style.color = '#' + picker.toString()
+  }
+</script>
+
+
