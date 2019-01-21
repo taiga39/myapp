@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get "day5" => "home#egoshi"
   get "day7" => "home#todovuejs"
   get "day8" => "home#canvas"
-  get "day9" => "home#jsgame"
+  get "day9" => "home#iconcolor"
 
 end
