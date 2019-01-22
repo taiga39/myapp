@@ -1,11 +1,12 @@
 <div id="content10">
   <h1 id="jobs-h1">inovation!!</h1>
+  <input type="button" value="Play!!" class="jobsimage" onclick="window.location.reload();" /day10><br><br><br>
   <canvas id="vwrMain" width="492" height="370"></canvas>
   <form name="js">
     <input type="text" placeholder="only alphabet" id="jobstext" onkeyup="(new jobs.textCanvas('vwrMain')).putChar(this.value);" ><br>
     <input type="button" value="TextReset" class="jobsimage" onclick="img()" >
-    <input type="button" value="Change Image" class="jobsimage" onclick="chgImg()">
-    <input type="button" value="Remake" class="jobsimage" onclick="window.location.reload();" />
+    <input type="button" value="Create Image" class="jobsimage" onclick="chgImg()">
+    <input type="button" value="Remake" class="jobsimage" onclick="window.location.reload();" /day10>
   </form><br><br>
   <div><img id="newImg"></div>
   <a href="app" id="jobs-h1">Goto Top</a>
@@ -13,6 +14,16 @@
 <%= render "layouts/appfooter" %>
 
 <script>
+window.addEventListener("load", function(){
+  var canvas = document.getElementById('vwrMain');
+  var c = canvas.getContext('2d');
+  var img = new Image();
+  img.src = './assets/jobs.jpg';
+
+  img.onload = function(){
+      c.drawImage(img,0, 0);
+  }
+}, false)
 function img(){
 
   var canvas = document.getElementById('vwrMain');
@@ -25,19 +36,6 @@ function img(){
   }
   document.js.reset();
 }
-window.addEventListener("load", function(){
-  var canvas = document.getElementById('vwrMain');
-  var c = canvas.getContext('2d');
-  var img = new Image();
-  img.src = './assets/jobs.jpg';
-
-  img.onload = function(){
-      c.drawImage(img,0, 0);
-  }
-}, false)
-
-
-
 
  function nameSpace(glb,spc){
    var ns = spc.split('.');
