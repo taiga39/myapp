@@ -1,13 +1,16 @@
-<h1>Hello, runstant!</h1>
- <div id="main">
+<div id="content10">
+  <h1 id="jobs-h1">inovation!!</h1>
   <canvas id="vwrMain" width="492" height="370"></canvas>
- </div>
- <form name="js">
-  <input type="txtb" placeholder="only alphabet" onkeyup="(new aya.eiya.test.textCanvas('vwrMain')).putChar(this.value);" >
-  <input type="button" value="TextReset" onclick="img()" >
-  <input type="button" value="画像に変換" onclick="chgImg()">
- </form>
-<div><img id="newImg"></div>
+  <form name="js">
+    <input type="text" placeholder="only alphabet" id="jobstext" onkeyup="(new jobs.textCanvas('vwrMain')).putChar(this.value);" ><br>
+    <input type="button" value="TextReset" class="jobsimage" onclick="img()" >
+    <input type="button" value="Change Image" class="jobsimage" onclick="chgImg()">
+    <input type="button" value="Remake" class="jobsimage" onclick="window.location.reload();" />
+  </form><br><br>
+  <div><img id="newImg"></div>
+  <a href="app" id="jobs-h1">Goto Top</a>
+</div>
+<%= render "layouts/appfooter" %>
 
 <script>
 function img(){
@@ -60,7 +63,7 @@ window.addEventListener("load", function(){
    }
  })(
    this,
-   nameSpace(this,'aya.eiya.test')
+   nameSpace(this,'jobs')
  );
 
 function chgImg()
@@ -73,9 +76,3 @@ function chgImg()
 
 
 
-<style>
-#vwrMain{
-  background-color: white;
-}
-
-</style>

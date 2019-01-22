@@ -70,9 +70,9 @@
       </div>
       <div class="app">
         <a href="day10">
-          <h4>IconColorChange</h4>
-          <img src="assets/day9.png">
-          <p>アイコンの色を変化させよう</p>
+          <h4>Job's Inovation!</h4>
+          <img src="assets/day10.png">
+          <p>ジョブスに新しい発明をプレゼンしてもらおう</p>
         </a>
       </div>
     </div>
