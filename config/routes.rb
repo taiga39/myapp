@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   get "day7" => "home#todovuejs"
   get "day8" => "home#canvas"
   get "day9" => "home#iconcolor"
-
+  get "day10" => "home#thum"
 end

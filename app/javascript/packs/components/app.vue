@@ -68,6 +68,13 @@
           <p>アイコンの色を変化させよう</p>
         </a>
       </div>
+      <div class="app">
+        <a href="day10">
+          <h4>IconColorChange</h4>
+          <img src="assets/day9.png">
+          <p>アイコンの色を変化させよう</p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
