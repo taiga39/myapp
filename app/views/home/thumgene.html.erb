@@ -1,0 +1,81 @@
+<h1>Hello, runstant!</h1>
+ <div id="main">
+  <canvas id="vwrMain" width="492" height="370"></canvas>
+ </div>
+ <form name="js">
+  <input type="txtb" placeholder="only alphabet" onkeyup="(new aya.eiya.test.textCanvas('vwrMain')).putChar(this.value);" >
+  <input type="button" value="TextReset" onclick="img()" >
+  <input type="button" value="画像に変換" onclick="chgImg()">
+ </form>
+<div><img id="newImg"></div>
+
+<script>
+function img(){
+
+  var canvas = document.getElementById('vwrMain');
+  var c = canvas.getContext('2d');
+  var img = new Image();
+  img.src = './assets/jobs.jpeg';
+
+  img.onload = function(){
+      c.drawImage(img,0, 0);
+  }
+  document.js.reset();
+}
+window.addEventListener("load", function(){
+  var canvas = document.getElementById('vwrMain');
+  var c = canvas.getContext('2d');
+  var img = new Image();
+  img.src = './assets/jobs.jpg';
+
+  img.onload = function(){
+      c.drawImage(img,0, 0);
+  }
+}, false)
+
+
+
+
+ function nameSpace(glb,spc){
+   var ns = spc.split('.');
+   var spcs = glb;
+   for(var i=0;i<ns.length;i++){
+     spcs = spcs[ns[i]] = new Object();
+   }
+   return spcs;
+ }
+
+ (function(global,_$){
+   _$.textCanvas = function(canvasId){
+     this.Canvas = global.document.getElementById(canvasId);
+     this.putChar = function(val){
+       var _cxt = this.Canvas.getContext("2d");
+       _cxt.fillStyle = "white";
+       _cxt.font = "40pt Arial";
+       var canvas = document.getElementById('vwrMain');
+       var textWidth = _cxt.measureText(val).width;
+       _cxt.fillText(val, 175, 185);
+
+     }
+   }
+ })(
+   this,
+   nameSpace(this,'aya.eiya.test')
+ );
+
+function chgImg()
+{
+  var canvas = document.getElementById('vwrMain');
+  var png = canvas.toDataURL();
+  document.getElementById("newImg").src = png;
+}
+</script>
+
+
+
+<style>
+#vwrMain{
+  background-color: white;
+}
+
+</style>
