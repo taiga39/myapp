@@ -55,17 +55,24 @@
         </a>
       </div>
       <div class="app">
-        <a href="day8">
+        <a href="day8" target="_blank">
           <h4>StrCanvasMove</h4>
           <img src="assets/day8.png">
           <p>Canvas内を文字が動き回るよ</p>
         </a>
       </div>
       <div class="app">
-        <a href="day9">
+        <a href="day9" target="_blank">
           <h4>IconColorChange</h4>
           <img src="assets/day9.png">
           <p>アイコンの色を変化させよう</p>
+        </a>
+      </div>
+      <div class="app">
+        <a href="day10" target="_blank">
+          <h4>Job's Inovation!</h4>
+          <img src="assets/day10.png">
+          <p>ジョブスに新しい発明をプレゼンしてもらおう</p>
         </a>
       </div>
     </div>

@@ -5,11 +5,26 @@
   i{
     font-size:100px;
   }
+  #reload-button {
+    max-width: 400px;
+    text-align: left;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px 16px;
+    border-radius: 4px;
+    transition: .4s;
+    border: 2px solid black;
+    margin-bottom:10px;
+
+  }
   .font-list{
     display:flex;
     flex-wrap: wrap;
     padding:20px 20px 20px 20px;
     justify-content:space-around;
+    margin-bottom:100px;
   }
   a{
     color:black;
@@ -30,7 +45,7 @@
   text-align: left;
   border: none;
   font-size: 16px;
-  color: #9ec34b;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
@@ -44,7 +59,7 @@
   text-align: left;
   border: none;
   font-size: 16px;
-  color: #9ec34b;
+  color: black;
   background-color: #f4f4f4;
   text-decoration: none;
   font-weight: bold;
