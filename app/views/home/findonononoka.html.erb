@@ -1,0 +1,56 @@
+<div id="content11">
+  <h1 class="head_test">
+    <span class="head_test-point">「おのののか」</span>
+    という文字を探してクリックするだけの遊び
+  </h1>
+  <div id="findono"></div><br>
+  <a href=/app id ="day11back">アプリ一覧に戻る</a>
+</div>
+
+<script>
+
+var ono3 = "おのか"
+var ono4 = "おののか"
+var ono5 = '<%= link_to "おのののか", day11seikai_path, :remote => true %>'
+var ono6 = "おののののか"
+var ono7 = "おのののののか"
+var ono8 = "おののののののか"
+
+var array = [[ono4,ono4,ono5,ono6],
+            [ono4,ono4,ono4,ono7],
+            [ono3,ono4,ono6,ono6],
+            [ono3,ono4,ono4,ono4,ono4],
+            [ono7,ono8,ono4],
+            [ono3,ono3,ono6,ono7],
+            [ono6,ono6,ono7],
+            [ono3,ono3,ono3,ono4,ono6],
+            [ono3,ono8,ono8],
+            [ono3,ono3,ono3,ono3,ono3,ono4]];
+
+var array2 = []
+
+for (var count = 0;count < 10;count++){
+  for (var i = array[count].length - 1; i >= 0; i--){
+
+    // 0~iのランダムな数値を取得
+    var rand = Math.floor( Math.random() * ( i + 1 ) );
+
+    // 配列の数値を入れ替える
+    [array[count][i], array[count][rand]] = [array[count][rand], array[count][i]]
+  }
+  var arrr = array[count].join("")
+  array2.push(arrr)
+}
+
+for (var ii = array2.length - 1; ii >= 0; ii--){
+
+    // 0~iのランダムな数値を取得
+  var rand = Math.floor( Math.random() * ( ii + 1 ) );
+
+    // 配列の数値を入れ替える
+  [array2[ii], array2[rand]] = [array2[rand], array2[ii]]
+
+}
+document.getElementById('findono').innerHTML = array2.join('');
+</script>
+

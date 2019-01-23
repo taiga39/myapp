@@ -1,0 +1,71 @@
+#content11 {
+  h1{
+    .head_test {
+        margin:  0;                 /* デフォルトCSS打ち消し */
+        font-size:  24px;           /* 文字サイズ指定 */
+        position:  relative;        /* 位置調整 */
+        font-weight:  normal;       /* 文字の太さ調整 */
+        margin-bottom: 15px;        /* 周りの余白指定 */
+        border-radius:  2px;        /* 角丸指定 */
+    }
+    p {
+        margin:  0;                 /* デフォルトCSS打ち消し */
+        line-height: 2;             /* 行間調整 */
+    }
+    .head_test-point {
+        background-color: #2196F3;  /* 背景色指定 */
+        border-radius:  50%;        /* 丸くする */
+        padding:  10px;             /* 余白指定 */
+        font-size: 40px;            /* 文字サイズ指定 */
+        color: #fff;                /* 文字色指定 */
+        margin-right: 5px;          /* 周りの余白指定 */
+    }
+  }
+  #findono{
+
+    background-color:#ACDBDA;
+    height:480px;
+    width:680px;
+    margin:0 auto 20px;
+    padding:40px 30px 30px 30px;
+    display        : inline-block;
+    color          : #ffffff;            /* 文字の色 */
+    font-size      : 23pt;               /* 文字のサイズ */
+    letter-spacing : 4px;                /* 文字間 */
+    text-shadow    :
+         2px  2px 1px #003366,
+        -2px  2px 1px #003366,
+         2px -2px 1px #003366,
+        -2px -2px 1px #003366,
+         2px  0px 1px #003366,
+         0px  2px 1px #003366,
+        -2px  0px 1px #003366,
+         0px -2px 1px #003366;
+    a{
+      text-decoration: none;
+      display        : inline-block;
+      color          : #ffffff;            /* 文字の色 */
+      font-size      : 23pt;               /* 文字のサイズ */
+      letter-spacing : 4px;                /* 文字間 */
+      text-shadow    :
+           2px  2px 1px #003366,
+          -2px  2px 1px #003366,
+           2px -2px 1px #003366,
+          -2px -2px 1px #003366,
+           2px  0px 1px #003366,
+           0px  2px 1px #003366,
+          -2px  0px 1px #003366,
+           0px -2px 1px #003366;
+    }
+    i{
+      font-size:100px;
+    }
+  }
+  a#day11back{
+    text-decoration: none;
+    color:gray;
+    background-color: #ffff66;
+    font-size:20px;
+    padding:10px;
+  }
+}
