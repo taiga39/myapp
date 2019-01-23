@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   get "day8" => "home#canvas"
   get "day9" => "home#iconcolor"
   get "day10" => "home#thumgene"
+  get "day11" => "home#findonononoka"
+  get "day11seikai" => "home#onoseikai"
+
 end
