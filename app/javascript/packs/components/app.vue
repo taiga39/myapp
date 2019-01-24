@@ -4,6 +4,13 @@
 
     <div class="app-list">
       <div class="app">
+        <a href="day12">
+          <h4>Catch a Cold</h4>
+          <img src="assets/taion.jpg">
+          <p>風邪をひきました</p>
+        </a>
+      </div>
+      <div class="app">
         <a href="day11">
           <h4>Find Onononoka!</h4>
           <img src="assets/day11.png">

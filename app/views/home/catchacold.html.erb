@@ -1,0 +1,19 @@
+<div id="content12">
+  <h1>Catch a Cold</h1>
+  <img src="assets/taion.jpg">
+  <p>風邪をひきました(画像はフリー素材)</p>
+  <div id="overlay"><img src="assets/nurse.jpg"><br><button onclick="imageoff()">心に優しい画像を消す</button></div>
+  <button onclick="imageon()">心に優しい画像を見る</button><br>
+  <button><%= link_to "トップ画面に戻る",app_path %></button>
+
+</div>
+
+<script>
+function imageon() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function imageoff() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
