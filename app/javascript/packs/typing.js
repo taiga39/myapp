@@ -24,8 +24,12 @@
 //   {{message}}
 //   <app></app>
 // </div>
-
-
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
 
+new Vue({
+  el:'#content13',
+  data: {
+    message:"Hello!"
+  }
+})
