@@ -30,6 +30,6 @@ import App from '../app.vue'
 new Vue({
   el:'#content13',
   data: {
-    message:"Hello!"
+    messages:"Hello!"
   }
 })
