@@ -1,5 +1,30 @@
+<script>
+var ono =[79,78,79]
+console.log(ono[0])
+
+document.onkeydown = function(e) {
+    var keyCode = false;
+    if (e) event = e;
+
+    if (event) {
+        if (event.keyCode) {
+            keyCode = event.keyCode;
+        // } else if (event.which) {
+        //     keyCode = event.which;
+        }
+    }
+    if (ono[0] == keyCode){
+      ono.shift()
+      console.log(ono)
+      console.log(ono[0])
+    } else {
+      console.log("owari")
+    }
+
+};
+</script>
+
+
 <div id="content13">
-  <input v-model="messages">
-  <p>{{messages}}</p>
+
 </div>
-<%= javascript_pack_tag 'typing' %>
