@@ -1,0 +1,114 @@
+<div id="content13">
+  <h1>「おのののか」ぽい文字列を打ち込みまくれ!!</h1><br>
+  <div id="onoquizzone">
+    <div id="onocount">
+      <h4>
+      <p style="display:inline;">正解数 </p><p id="countup" style="display:inline;">0</p><br>
+      <p style="display:inline;">残り時間 </p><p id="timer" style="display:inline;">0</p></h4>
+    </div><br><br>
+    <input type="button" value="START"  id="startbutton" onclick="timercount();start();removebutton()">
+    <div id="onomondai"></div>
+    <div id="onorule">
+      <h4>このゲームのルール</h4>
+      <p>一回でも入力ミスをしたら終わりだ。</p>
+      <p>入力した文字は画面に出ない、己を信じろ。</p>
+      <p>入力が完了したらエンターキーを押すんだ！</p>
+      <p>「ん」は「n」を２回押すべし</p>
+    </div>
+
+  </div>
+  <h4>
+    <a href=/app id ="day11back">アプリ一覧に戻る</a>
+  </h4>
+</div>
+
+<script>
+var onomondai =
+["おのののか",
+"おののののか",
+"おのののののか",
+"おののののののか",
+"おのののののののか",
+"おののののののののか",
+"あのののか",
+"あののののか",
+"おのののかのおの",
+"きききりん",
+"おのののかなのか",
+"おののか",
+"おのかな"]
+
+var count = 0
+var timer = 0;
+var countup = function(){
+  console.log(timer++);
+}
+
+
+function removebutton(){
+  document.getElementById('startbutton').remove();
+}
+
+function timercount(){
+  var timeup = setInterval(function(){
+    document.getElementById("timer").innerText = 30 - timer;
+    countup();
+    if(timer > 30){
+      clearInterval(timeup);
+      alert("タイムアップ!!あなたのスコアは"+ count + "点でした")
+      location.reload();
+    }}, 1000);
+}
+
+function start(){
+  var ono =[
+    [79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [65,78,79,78,79,78,79,75,65],
+    [65,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,75,65,78,79,79,78,79],
+    [75,73,75,73,75,73,82,73,78,78],
+    [79,78,79,78,79,78,79,75,65,78,65,78,79,75,65],
+    [79,78,79,78,79,75,65],
+    [79,78,79,75,65,78,65]
+    ]
+
+  var randnum = Math.floor( Math.random() * 11 );
+  var impquiz = onomondai[randnum]
+  var quiz = ono[randnum]
+  document.getElementById("onomondai").innerHTML = impquiz
+  console.log(quiz)
+
+
+  document.onkeydown = function(e) {
+    var keyCode = false;
+    if (e) event = e;
+    if (event) {
+        if (event.keyCode) {
+            keyCode = event.keyCode;
+        } else if (event.which) {
+            keyCode = event.which;
+        }
+    }
+  if(quiz[0] == keyCode){
+      quiz.shift()
+      console.log(quiz)
+    }else if(quiz.length == 0&&keyCode == 13){
+      start()
+      count++
+      document.getElementById("countup").innerText = count;
+    }else{
+      alert("間違えたようです。あなたのスコアは"+ count + "点した")
+      location.reload();
+    }
+  };
+
+}
+
+
+</script>
+

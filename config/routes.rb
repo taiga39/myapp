@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get "day11" => "home#findonononoka"
   get "day11seikai" => "home#onoseikai"
   get "day12" => "home#catchacold"
+  get "day13" => "home#typing"
 
 
 end
