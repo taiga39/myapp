@@ -55,7 +55,7 @@ function timercount(){
     countup();
     if(timer > 30){
       clearInterval(timeup);
-      alert("あなたのスコア"+ count + "点です")
+      alert("タイムアップ!!あなたのスコアは"+ count + "点でした")
       location.reload();
     }}, 1000);
 }
@@ -102,7 +102,7 @@ function start(){
       count++
       document.getElementById("countup").innerText = count;
     }else{
-      alert("あなたのスコア"+ count + "点です")
+      alert("間違えたようです。あなたのスコアは"+ count + "点した")
       location.reload();
     }
   };
