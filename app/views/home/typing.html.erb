@@ -1,30 +1,96 @@
-<script>
-var ono =[79,78,79]
-console.log(ono[0])
+<div id="content13">
+  <div id="onoquizzone">
+    <input type="button" value="スタート"  id="startbutton" onclick="timercount();start();removebutton()">
+    <div id="onomondai"></div>
+    <p style="display:inline;">正解数 </p><p id="countup" style="display:inline;">0</p><br>
+    <p style="display:inline;">残り時間 </p><p id="timer" style="display:inline;">0</p>
+    <p>入力できたと思ったらエンターキーを押すんだ！</p>
+  </div>
+</div>
 
-document.onkeydown = function(e) {
+<script>
+var onomondai =
+["おのののか",
+"おののののか",
+"おのののののか",
+"おののののののか",
+"おのののののののか",
+"おののののののののか",
+"あのののか",
+"あののののか",
+"おのののかのおの",
+"きききりん",
+"おのののかなのか"]
+
+var count = 0
+var timer = 0;
+var countup = function(){
+  console.log(timer++);
+}
+
+
+function removebutton(){
+  document.getElementById('startbutton').remove();
+}
+
+function timercount(){
+  var timeup = setInterval(function(){
+    document.getElementById("timer").innerText = 30 - timer;
+    countup();
+    if(timer > 30){
+      clearInterval(timeup);
+      alert("あなたのスコア"+ count + "点です")
+      location.reload();
+    }}, 1000);
+}
+
+function start(){
+  var ono =[
+    [79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [65,78,79,78,79,78,79,75,65],
+    [65,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,75,65,78,79,79,78,79],
+    [75,73,75,73,75,73,82,73,78,78],
+    [79,78,79,78,79,78,79,75,65,78,65,78,79,75,65],
+    ]
+
+  var randnum = Math.floor( Math.random() * 10 );
+  var impquiz = onomondai[randnum]
+  var quiz = ono[randnum]
+  document.getElementById("onomondai").innerHTML = impquiz
+  console.log(quiz)
+
+
+  document.onkeydown = function(e) {
     var keyCode = false;
     if (e) event = e;
-
     if (event) {
         if (event.keyCode) {
             keyCode = event.keyCode;
-        // } else if (event.which) {
-        //     keyCode = event.which;
+        } else if (event.which) {
+            keyCode = event.which;
         }
     }
-    if (ono[0] == keyCode){
-      ono.shift()
-      console.log(ono)
-      console.log(ono[0])
-    } else {
-      console.log("owari")
+  if(quiz[0] == keyCode){
+      quiz.shift()
+      console.log(quiz)
+    }else if(quiz.length == 0&&keyCode == 13){
+      start()
+      count++
+      document.getElementById("countup").innerText = count;
+    }else{
+      alert("あなたのスコア"+ count + "点です")
+      location.reload();
     }
+  };
 
-};
+}
+
+
 </script>
 
-
-<div id="content13">
-
-</div>
