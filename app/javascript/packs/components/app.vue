@@ -5,9 +5,9 @@
     <div class="app-list">
       <div class="app">
         <a href="day14">
-          <h4>Play!!!</h4>
-          <img src="assets/day13.png">
-          <p>おのののかっぽい文字を打つこめい！</p>
+          <h4>Play Yuuna's Video!!!</h4>
+          <img src="assets/day14.png">
+          <p>鈴木友菜ちゃんの動画を見て癒やされたいんだ</p>
         </a>
       </div>
       <div class="app">
