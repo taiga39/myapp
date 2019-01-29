@@ -14,7 +14,10 @@
 <%= render "layouts/appfooter" %>
 
 <script>
-window.addEventListener("load", function(){
+window.addEventListener("DOMContentLoaded",createcanvas())
+
+function createcanvas(){
+
   var canvas = document.getElementById('vwrMain');
   var c = canvas.getContext('2d');
   var img = new Image();
@@ -23,7 +26,7 @@ window.addEventListener("load", function(){
   img.onload = function(){
       c.drawImage(img,0, 0);
   }
-}, false)
+}
 function img(){
 
   var canvas = document.getElementById('vwrMain');

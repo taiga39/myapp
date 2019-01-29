@@ -32,7 +32,9 @@
 </style>
 
 <script>
-window.addEventListener( 'load', function(){
+window.addEventListener('DOMContentLoaded', canvasmove());
+
+function canvasmove(){
   let canvas = document.querySelector('#canvas');
   let context = canvas.getContext('2d');
   let x = Math.random() * 99;
@@ -73,6 +75,6 @@ window.addEventListener( 'load', function(){
     text = this.value;
     paddingX = text.length * 26 / 2;
   });
-});
+};
 
 </script>

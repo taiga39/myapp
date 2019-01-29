@@ -32,7 +32,7 @@
         </a>
       </div>
       <div class="app">
-        <a href="day10" target="_blank">
+        <a href="day10">
           <h4>Job's Inovation!</h4>
           <img src="assets/day10.png">
           <p>ジョブスに新しい発明をプレゼンしてもらおう</p>
@@ -46,7 +46,7 @@
         </a>
       </div>
       <div class="app">
-        <a href="day8" target="_blank">
+        <a href="day8">
           <h4>StrCanvasMove</h4>
           <img src="assets/day8.png">
           <p>Canvas内を文字が動き回るよ</p>
