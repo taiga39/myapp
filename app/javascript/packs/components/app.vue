@@ -4,6 +4,13 @@
 
     <div class="app-list">
       <div class="app">
+        <a href="day14">
+          <h4>Play!!!</h4>
+          <img src="assets/day13.png">
+          <p>おのののかっぽい文字を打つこめい！</p>
+        </a>
+      </div>
+      <div class="app">
         <a href="day13">
           <h4>Type Onononoka!</h4>
           <img src="assets/day13.png">

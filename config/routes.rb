@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get "day11seikai" => "home#onoseikai"
   get "day12" => "home#catchacold"
   get "day13" => "home#typing"
+  get "day14" => "home#useyoutube"
 
 
 end
