@@ -4,6 +4,13 @@
 
     <div class="app-list">
       <div class="app">
+        <a href="day14">
+          <h4>Play Yuuna's Video!!!</h4>
+          <img src="assets/day14.png">
+          <p>鈴木友菜ちゃんの動画を見て癒やされたいんだ</p>
+        </a>
+      </div>
+      <div class="app">
         <a href="day13">
           <h4>Type Onononoka!</h4>
           <img src="assets/day13.png">
@@ -25,7 +32,7 @@
         </a>
       </div>
       <div class="app">
-        <a href="day10" target="_blank">
+        <a href="day10">
           <h4>Job's Inovation!</h4>
           <img src="assets/day10.png">
           <p>ジョブスに新しい発明をプレゼンしてもらおう</p>
@@ -39,7 +46,7 @@
         </a>
       </div>
       <div class="app">
-        <a href="day8" target="_blank">
+        <a href="day8">
           <h4>StrCanvasMove</h4>
           <img src="assets/day8.png">
           <p>Canvas内を文字が動き回るよ</p>

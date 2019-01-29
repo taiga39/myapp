@@ -1,20 +1,21 @@
 <div id="content13">
   <h1>「おのののか」ぽい文字列を打ち込みまくれ!!</h1><br>
   <div id="onoquizzone">
+    <div id="onorule">
+      <h4>このゲームのルール</h4>
+        <p>一回でも入力ミスをしたら終わりだ。</p>
+        <p>入力した文字は画面に出ない、己を信じろ。</p>
+        <p>入力が完了したらエンターキーを押すんだ！</p>
+        <p>「ん」は「n」を２回押すべし</p><br>
+        <button class="startbutton" onclick="alacha()">ルールを読んだ</button>
+    </div>
     <div id="onocount">
       <h4>
       <p style="display:inline;">正解数 </p><p id="countup" style="display:inline;">0</p><br>
       <p style="display:inline;">残り時間 </p><p id="timer" style="display:inline;">0</p></h4>
     </div><br><br>
-    <input type="button" value="START"  id="startbutton" onclick="timercount();start();removebutton()">
+    <input type="button" value="START"  class="startbutton" id="startbutton" onclick="timercount();start();removebutton()">
     <div id="onomondai"></div>
-    <div id="onorule">
-      <h4>このゲームのルール</h4>
-      <p>一回でも入力ミスをしたら終わりだ。</p>
-      <p>入力した文字は画面に出ない、己を信じろ。</p>
-      <p>入力が完了したらエンターキーを押すんだ！</p>
-      <p>「ん」は「n」を２回押すべし</p>
-    </div>
 
   </div>
   <h4>
@@ -23,8 +24,31 @@
 </div>
 
 <script>
+window.addEventListener('DOMContentLoaded', alachan())
+
+function alachan(){
+  document.getElementById("onorule").style.display = "block";
+}
+
+function alacha(){
+  document.getElementById("onorule").style.display = "none";
+}
+
 var onomondai =
 ["おのののか",
+"おののののか",
+"おのののののか",
+"おののののののか",
+"おのののののののか",
+"おののののののののか",
+"あのののか",
+"あののののか",
+"おのののかのおの",
+"きききりん",
+"おのののかなのか",
+"おののか",
+"おのかな",
+"おのののか",
 "おののののか",
 "おのののののか",
 "おののののののか",
@@ -74,10 +98,23 @@ function start(){
     [75,73,75,73,75,73,82,73,78,78],
     [79,78,79,78,79,78,79,75,65,78,65,78,79,75,65],
     [79,78,79,78,79,75,65],
+    [79,78,79,75,65,78,65],
+    [79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,78,79,75,65],
+    [65,78,79,78,79,78,79,75,65],
+    [65,78,79,78,79,78,79,78,79,75,65],
+    [79,78,79,78,79,78,79,75,65,78,79,79,78,79],
+    [75,73,75,73,75,73,82,73,78,78],
+    [79,78,79,78,79,78,79,75,65,78,65,78,79,75,65],
+    [79,78,79,78,79,75,65],
     [79,78,79,75,65,78,65]
     ]
 
-  var randnum = Math.floor( Math.random() * 11 );
+  var randnum = Math.floor( Math.random() * 21 );
   var impquiz = onomondai[randnum]
   var quiz = ono[randnum]
   document.getElementById("onomondai").innerHTML = impquiz
@@ -102,7 +139,7 @@ function start(){
       count++
       document.getElementById("countup").innerText = count;
     }else{
-      alert("間違えたようです。あなたのスコアは"+ count + "点した")
+      alert("間違えたようです。あなたのスコアは"+ count + "点でした")
       location.reload();
     }
   };
