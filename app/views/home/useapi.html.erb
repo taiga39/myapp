@@ -8,5 +8,9 @@
     <p v-else-if="condition.main == 'Clouds'"><img src="img/cloudy.jpg" alt="Cloudy"></p>
     <p v-else-if="condition.main == 'Clear'"><img src="img/sunny.jpg" alt="Sunny"></p>
     <p v-else><img src="img/sunset.jpg" alt="Sunset"></p>
+    <input v-model="message" placeholder="edit me">
+    <p>Message is: {{ message }}</p>
+    <button v-on:click="greet">Greet</button>
+
 </div>
 <%= javascript_pack_tag 'useapi' %>
