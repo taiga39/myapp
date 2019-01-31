@@ -1,1 +1,12 @@
-firstcommit
+<div id="content15">
+    <div class="weather_info">
+      <p class="weather_city">{{ city }}</p>
+      <p class="weather_condition">{{ condition.main }}</p>
+      <p class="weather_temp">{{ temp | roundUp }}&deg;C</p>
+    </div>
+    <p v-if="condition.main == 'Rain'"><img src="img/rain.jpg" alt="Rainy"></p>
+    <p v-else-if="condition.main == 'Clouds'"><img src="img/cloudy.jpg" alt="Cloudy"></p>
+    <p v-else-if="condition.main == 'Clear'"><img src="img/sunny.jpg" alt="Sunny"></p>
+    <p v-else><img src="img/sunset.jpg" alt="Sunset"></p>
+</div>
+<%= javascript_pack_tag 'useapi' %>
