@@ -1,9 +1,9 @@
 <script>
 
-    script = document.createElement( 'script' );
-    script.src = "//www.youtube.com/iframe_api";
+    videoscript = document.createElement( 'script' );
+    videoscript.src = "//www.youtube.com/iframe_api";
     firstScript = document.getElementsByTagName( 'script' )[ 0 ];
-    firstScript.parentNode.insertBefore( script , firstScript );
+    firstScript.parentNode.insertBefore( videoscript , firstScript );
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {

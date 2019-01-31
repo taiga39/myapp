@@ -1,0 +1,14 @@
+<div id="content15">
+  <h1>Japan Weather</h1>
+  <div class="weather_info">
+    <p class="weather_city">{{ city }}</p>
+    <p class="weather_condition">{{ condition.main }}</p>
+    <p class="weather_temp">{{ temp | roundUp }}&deg;C</p>
+  </div>
+  <input v-model="message" placeholder="都市名を入れてね">
+  <button v-on:click="weather">天気を見る</button>
+
+</div><br>
+<%= link_to "トップ画面に戻る",app_path %>
+
+<%= javascript_pack_tag 'useapi' %>
