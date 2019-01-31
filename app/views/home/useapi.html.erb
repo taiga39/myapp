@@ -1,16 +1,12 @@
 <div id="content15">
-    <div class="weather_info">
-      <p class="weather_city">{{ city }}</p>
-      <p class="weather_condition">{{ condition.main }}</p>
-      <p class="weather_temp">{{ temp | roundUp }}&deg;C</p>
-    </div>
-    <p v-if="condition.main == 'Rain'"><img src="img/rain.jpg" alt="Rainy"></p>
-    <p v-else-if="condition.main == 'Clouds'"><img src="img/cloudy.jpg" alt="Cloudy"></p>
-    <p v-else-if="condition.main == 'Clear'"><img src="img/sunny.jpg" alt="Sunny"></p>
-    <p v-else><img src="img/sunset.jpg" alt="Sunset"></p>
-    <input v-model="message" placeholder="edit me">
-    <p>Message is: {{ message }}</p>
-    <button v-on:click="greet">Greet</button>
+  <h1>Japan Weather</h1>
+  <div class="weather_info">
+    <p class="weather_city">{{ city }}</p>
+    <p class="weather_condition">{{ condition.main }}</p>
+    <p class="weather_temp">{{ temp | roundUp }}&deg;C</p>
+  </div>
+  <input v-model="message" placeholder="都市名を入れてね">
+  <button v-on:click="weather">天気を見る</button>
 
 </div>
 <%= javascript_pack_tag 'useapi' %>
