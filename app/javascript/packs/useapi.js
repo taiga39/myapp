@@ -46,3 +46,34 @@ var app = new Vue({
     }
   }
 })
+
+
+
+var tabs = [
+  {
+    name: 'Homea',
+    component: {
+      template: '<div>Lovelovelove</div>'
+    }
+  },
+  {
+    name: 'Posts',
+    component: {
+      template: '<div>Unok</div>'
+    }
+  },
+  {
+    name: 'Archive',
+    component: {
+      template: '<div>Archive component</div>',
+    }
+  }
+]
+
+new Vue({
+  el: '#dynamic-component-demo',
+  data: {
+    tabs: tabs,
+    currentTab: tabs[0]
+  }
+})

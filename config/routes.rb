@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get "day13" => "home#typing"
   get "day14" => "home#useyoutube"
   get "day15" => "home#useapi"
+  get "day16" => "home#vuecomponents"
 
 
 end
