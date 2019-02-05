@@ -1,1 +1,9 @@
-aaaadsfasd
+<%= audio_tag("ipod.mp3",id:"audio") %>
+
+<%=submit_tag "I got it!" ,class:"audioButton"%>
+<%=javascript_tag do%>
+    document.querySelector('.audioButton').onclick = function () {
+    document.querySelector("#audio").play();
+    alert("You answered")
+    }
+<%end%>
