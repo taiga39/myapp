@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get "day14" => "home#useyoutube"
   get "day15" => "home#useapi"
   get "day16" => "home#use-element"
+  get "day17" => "home#iphonexxx"
 
 
 end
