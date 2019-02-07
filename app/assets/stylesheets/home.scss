@@ -260,3 +260,38 @@ a#jobs-h1{
     width:300px;
   }
 }
+#content17{
+  .input-range[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffdae7;
+    height: 2px;
+    width: 20%;
+    border-radius: 6px;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: block;
+      border: 2px solid #fb5986;
+      background-color: yellow;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
+  }
+  a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+  }
+}
+

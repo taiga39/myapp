@@ -5,7 +5,7 @@ var iphone = new Vue({
   el: '#content17',
   data: {
     image: {
-      height: 500
+      height: 672
     }
   }
 })
