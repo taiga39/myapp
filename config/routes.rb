@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root to: 'home#index'
   resources :posttests
-  resources :messages
 
   get '/profile',   to: 'home#index'
   get '/technology', to: 'home#index'
