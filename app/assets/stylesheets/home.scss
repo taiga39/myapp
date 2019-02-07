@@ -15,8 +15,8 @@
         opacity: 0;
     }
 }
-
-
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 .wrapper {
   margin:0 auto;
   min-height: 400px;
@@ -177,3 +177,121 @@ a#jobs-h1{
   }
 
 }
+
+#content16{
+  background-color: black;
+  padding-bottom: 30px;
+  a{
+    font-family: "Arvo";
+    text-decoration: none;
+    font-size:40px;
+    color:white;
+  }
+
+  .plate {
+    width: 410px;
+    margin: 10% auto;
+  }
+  .shadow {
+    color: #fff;
+    font-family: Arvo;
+    font-weight: bold;
+    text-shadow:
+      -3px -3px 0 #222,
+      3px -3px 0 #222,
+      -3px 3px 0 #222,
+      3px 3px 0 #222,
+      4px 4px 0 #fff,
+      5px 5px 0 #fff,
+      6px 6px 0 #fff,
+      7px 7px 0 #fff;
+    line-height: 0.8em;
+    letter-spacing: 0.1em;
+    transform: scaleY(0.7);
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    margin:0;
+    text-align: center;
+  }
+  .script {
+    font-family: "Seaweed Script";
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    margin:0;
+  }
+  .script span {
+    background-color: #222;
+    padding: 0 0.3em;
+  }
+  .script:before {
+    content:"";
+    display: block;
+    position: absolute;
+    z-index:-1;
+    top: 50%;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+  }
+  .text2 {
+    font-size: 100px;
+  }
+
+
+  img{
+    width:300px;
+  }
+  .buruburu {
+    display: inline-block;
+    animation: hurueru .1s  infinite;
+  }
+
+  @keyframes hurueru {
+      0% {transform: translate(0px, 0px) rotateZ(0deg)}
+      25% {transform: translate(2px, 2px) rotateZ(1deg)}
+      50% {transform: translate(0px, 2px) rotateZ(0deg)}
+      75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+      100% {transform: translate(0px, 0px) rotateZ(0deg)}
+  }
+  button{
+    padding:0 0 0 0 ;
+    border:none;
+    width:300px;
+  }
+}
+#content17{
+  .input-range[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffdae7;
+    height: 2px;
+    width: 20%;
+    border-radius: 6px;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: block;
+      border: 2px solid #fb5986;
+      background-color: yellow;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
+  }
+  a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+  }
+}
+

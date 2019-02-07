@@ -4,6 +4,20 @@
 
     <div class="app-list">
       <div class="app">
+        <a href="day17">
+          <h4>NEW iPhone</h4>
+          <img src="assets/day17.png">
+          <p>iPhoneはどんどん大きくなる</p>
+        </a>
+      </div>
+      <div class="app">
+        <a href="day16">
+          <h4>Regge Horn</h4>
+          <img src="assets/day16.png">
+          <p>画像を押したら、よく聞くレゲエホーンが鳴る</p>
+        </a>
+      </div>
+      <div class="app">
         <a href="day15">
           <h4>Nippon noTenki</h4>
           <img src="assets/day15.png">

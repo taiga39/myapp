@@ -1,0 +1,17 @@
+<div id="content17">
+
+  <h1 v-if="image.height > 1900">iPhoneXXXXXXXXXX</h1>
+  <h1 v-else-if="image.height > 1600">iPhoneXXXXXX</h1>
+  <h1 v-else-if="image.height > 1400">iPhoneXXXXX</h1>
+  <h1 v-else-if="image.height > 1200">iPhoneXXXX</h1>
+  <h1 v-else-if="image.height > 1000">iPhoneXXX</h1>
+  <h1 v-else-if="image.height > 800">iPhoneXX</h1>
+  <h1 v-else>iPhoneX</h1>
+
+  <input type="range"  class="input-range" max="2000" min="672"step="25" v-model="image.height"><br><br>
+  <img src="assets/iphonexxx.png" id="imageiphone"  width="360" v-bind:height="image.height"><br>
+  <a href="app">戻る</a>
+
+</div>
+
+<%= javascript_pack_tag 'iphonexxx' %>

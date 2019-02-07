@@ -1,0 +1,28 @@
+<div id="content16">
+  <div class="plate">
+    <p class="shadow text2">Reggee Horn</p>
+    <p class="script"><span>Please Click image</span></p>
+  </div>
+  <%= audio_tag("horn1.mp3",id:"audio") %>
+  <%= audio_tag("horn2.mp3",id:"audio2") %>
+  <button id="audioButton"><img id="buttondayo1" src="assets/horn1.png"></button>
+  <button id="audioButton2"><img id="buttondayo2" src="assets/horn2.png"></button>
+  <div class="plate">
+    <a href="app">GotoAPP</a>
+  </div>
+</div>
+
+
+<%=javascript_tag do%>
+    document.querySelector('#audioButton').onclick = function () {
+    document.querySelector("#audio").play();
+    document.querySelector('#buttondayo1').classList.add("buruburu");
+    setTimeout('document.querySelector("#buttondayo1").classList.remove("buruburu")',1800);
+    }
+
+    document.querySelector('#audioButton2').onclick = function () {
+    document.querySelector("#audio2").play();
+    document.querySelector('#buttondayo2').classList.add("buruburu");
+    setTimeout('document.querySelector("#buttondayo2").classList.remove("buruburu")',2000);
+    }
+<%end%>
