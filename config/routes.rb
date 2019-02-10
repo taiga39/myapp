@@ -24,6 +24,6 @@ Rails.application.routes.draw do
   get "day15" => "home#useapi"
   get "day16" => "home#use-element"
   get "day17" => "home#iphonexxx"
-  get "day18" => "home#"
+  get "day18" => "home#sleepy"
 
 end
