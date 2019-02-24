@@ -25,5 +25,6 @@ Rails.application.routes.draw do
   get "day16" => "home#use-element"
   get "day17" => "home#iphonexxx"
   get "day18" => "home#imsleepy"
+  get "day19" => "home#grud-yuuna"
 
 end
